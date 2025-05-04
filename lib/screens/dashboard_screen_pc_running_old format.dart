@@ -19,6 +19,58 @@ class DashboardFromCSV extends StatefulWidget {
 }
 
 class _DashboardFromCSVState extends State<DashboardFromCSV> {
+
+  Map<String, int> _ernaehrungsVerteilung() {
+    final Map<String, int> verteilung = {
+      'Fleisch': 0,
+      'Fisch': 0,
+      'Vegetarisch': 0,
+      'Vegan': 0,
+      'Getränk': 0,
+    };
+
+    for (var e in _einkaeufe) {
+      final kategorie = e.kategorie.toLowerCase();
+      if (kategorie.contains('fleisch') || kategorie.contains('geflügel')) {
+        verteilung['Fleisch'] = verteilung['Fleisch']! + 1;
+      } else if (kategorie.contains('fisch')) {
+        verteilung['Fisch'] = verteilung['Fisch']! + 1;
+      } else if (kategorie.contains('vegan')) {
+        verteilung['Vegan'] = verteilung['Vegan']! + 1;
+      } else if (kategorie.contains('getränk')) {
+        verteilung['Getränk'] = verteilung['Getränk']! + 1;
+      } else if (kategorie.contains('vegetarisch') || kategorie.contains('süßigkeit') || kategorie.contains('dessert') || kategorie.contains('obst') || kategorie.contains('gemüse')) {
+        verteilung['Vegetarisch'] = verteilung['Vegetarisch']! + 1;
+      }
+    }
+
+    return verteilung;
+  }
+
+  List<PieChartSectionData> _buildPieChartSections() {
+    final data = _ernaehrungsVerteilung();
+    final colors = [
+      Colors.redAccent,
+      Colors.lightBlueAccent,
+      Colors.green,
+      Colors.purple,
+      Colors.orange,
+    ];
+    final labels = data.keys.toList();
+    final values = data.values.toList();
+
+    return List.generate(data.length, (i) {
+      final value = values[i].toDouble();
+      return PieChartSectionData(
+        value: value,
+        title: '\${labels[i]}\n\${values[i]}',
+        color: colors[i],
+        radius: 60,
+        titleStyle: TextStyle(color: Colors.black, fontSize: 12),
+      );
+    });
+  }
+
   List<Einkauf> _einkaeufe = [];
   String status = "Noch keine Datei geladen.";
 
@@ -133,11 +185,13 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     final topLabels = _top5Labels();
     return Scaffold(
       appBar: AppBar(toolbarHeight: 0),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            ElevatedButton(
+      
+body: SingleChildScrollView(
+  padding: const EdgeInsets.all(16.0),
+  child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+                ElevatedButton(
               onPressed: _pickFileAndParse,
               child: Text('CSV wählen'),
             ),
@@ -175,7 +229,21 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                 )),
               ),
               SizedBox(height: 30),
-              Text("Top 10 Kategorien", style: Theme.of(context).textTheme.titleLarge),
+              
+              SizedBox(height: 32),
+              Text("Ernährungsanteile", style: Theme.of(context).textTheme.titleLarge),
+              SizedBox(
+                height: 250,
+                child: PieChart(
+                  PieChartData(
+                    sections: _buildPieChartSections(),
+                    sectionsSpace: 2,
+                    centerSpaceRadius: 40,
+                  ),
+                ),
+              ),
+              SizedBox(height: 32),
+Text("Top 10 Kategorien", style: Theme.of(context).textTheme.titleLarge),
               SizedBox(
                 height: 300,
                 child: BarChart(BarChartData(

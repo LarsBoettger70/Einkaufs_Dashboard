@@ -1,4 +1,4 @@
-// Spaltenbezeichnungen und Reihenfolge der csv-Datei
+// Spaltenbezeichnungen und Reihenfeolge der csv-Datei
 // Datum,Artikel,Artikelbeschreibung,Kategorie,Produktart,Menge,Einheit,Preis (€),Supermarkt,Kommentar,Wer
 
 import 'dart:convert';
@@ -9,30 +9,20 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
 class Einkauf {
-  final String datum;
   final String artikel;
-  final String beschreibung;
   final String kategorie;
   final String produktart;
   final double menge;
   final String einheit;
   final double preis;
-  final String supermarkt;
-  final String kommentar;
-  final String wer;
 
   Einkauf({
-    required this.datum,
     required this.artikel,
-    required this.beschreibung,
     required this.kategorie,
     required this.produktart,
     required this.menge,
     required this.einheit,
     required this.preis,
-    required this.supermarkt,
-    required this.kommentar,
-    required this.wer,
   });
 }
 
@@ -52,26 +42,21 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
       final content = await file.readAsString();
       final csvRows = const CsvToListConverter(fieldDelimiter: ';', eol: '\n').convert(content);
 
-      if (csvRows.isNotEmpty) csvRows.removeAt(0);
+      if (csvRows.isNotEmpty) csvRows.removeAt(0); // remove header
 
       setState(() {
         _einkaeufe = csvRows
-            .where((row) => row.length >= 11)
+            .where((row) => row.length >= 6)
             .map((row) => Einkauf(
-                  datum: row[0]?.toString() ?? '',
                   artikel: row[1]?.toString() ?? '',
-                  beschreibung: row[2]?.toString() ?? '',
-                  kategorie: row[3]?.toString() ?? '',
-                  produktart: row[4]?.toString() ?? '',
-                  menge: double.tryParse(row[5]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
-                  einheit: row[6]?.toString() ?? '',
-                  preis: double.tryParse(row[7]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
-                  supermarkt: row[8]?.toString() ?? '',
-                  kommentar: row[9]?.toString() ?? '',
-                  wer: row[10]?.toString() ?? '',
+                  kategorie: row[2]?.toString() ?? '',
+                  menge: double.tryParse(row[3]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
+                  einheit: row[4]?.toString() ?? '',
+                  preis: double.tryParse(row[5]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
+                  produktart: row.length > 6 ? row[6]?.toString() ?? '' : '',
                 ))
             .toList();
-        status = "Datei geladen:${result.files.single.name}";
+        status = "Datei geladen: \${result.files.single.name}";
       });
     }
   }
@@ -79,7 +64,6 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
   Map<String, double> _berechneAusgabenNachProduktart() {
     final Map<String, double> ausgaben = {};
     for (var e in _einkaeufe) {
-      if (e.produktart.toLowerCase() == 'nicht essbar') continue;
       final art = e.produktart.isEmpty ? 'Unbekannt' : e.produktart;
       ausgaben[art] = (ausgaben[art] ?? 0) + e.preis;
     }
@@ -98,9 +82,9 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
       return PieChartSectionData(
         color: Colors.primaries[i % Colors.primaries.length],
         value: values[i],
-        title: "${labels[i]}\n${values[i].toStringAsFixed(2)} €",
-        radius: 90,
-        titleStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+        title: "\${labels[i]}\n\${values[i].toStringAsFixed(2)} €",
+        radius: 60,
+        titleStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
       );
     });
   }
@@ -113,7 +97,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     return Map.fromEntries(
       ausgaben.entries.toList()
         ..sort((a, b) => b.value.compareTo(a.value))
-        ..length = ausgaben.length < 7 ? ausgaben.length : 7,
+        ..length = ausgaben.length < 5 ? ausgaben.length : 5,
     );
   }
 
@@ -122,18 +106,9 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     final values = data.values.toList();
 
     return List.generate(data.length, (i) {
-      return BarChartGroupData(
-        x: i,
-        barRods: [
-          BarChartRodData(
-            toY: values[i],
-            color: Colors.blueAccent,
-            width: 10,
-            borderRadius: BorderRadius.zero,
-          )
-        ],
-        showingTooltipIndicators: [0],
-      );
+      return BarChartGroupData(x: i, barRods: [
+        BarChartRodData(toY: values[i], color: Colors.blueAccent)
+      ]);
     });
   }
 
@@ -165,12 +140,12 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                     PieChartData(
                       sections: _buildPieChartSections(),
                       sectionsSpace: 2,
-                      centerSpaceRadius: 60,
+                      centerSpaceRadius: 40,
                     ),
                   ),
                 ),
                 const SizedBox(height: 24),
-                const Text("Top 7 Kategorien nach Ausgaben"),
+                const Text("Top 5 Kategorien nach Ausgaben"),
                 const SizedBox(height: 12),
                 SizedBox(
                   height: 300,
@@ -178,61 +153,26 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                     BarChartData(
                       barGroups: _buildBarChartData(),
                       titlesData: FlTitlesData(
-                        leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                        topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                        leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: true)),
                         bottomTitles: AxisTitles(
                           sideTitles: SideTitles(
                             showTitles: true,
-                            reservedSize: 80,
                             getTitlesWidget: (value, meta) {
                               final index = value.toInt();
-                              return Transform.translate(
-                                offset: const Offset(0, -30),
-                                child: Transform.rotate(
-                                  angle: -1.2,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    index < topKategorien.length ? topKategorien.keys.toList()[index] : '',
-                                    style: const TextStyle(fontSize: 14),
-                                  ),
+                              return Transform.rotate(
+                                angle: -1.2, // ca. 68.75 Grad
+                                child: Text(
+                                  index < topKategorien.length ? topKategorien.keys.toList()[index] : '',
+                                  style: const TextStyle(fontSize: 10),
                                 ),
                               );
                             },
                           ),
                         ),
-                        rightTitles: AxisTitles(
-                          sideTitles: SideTitles(
-                            showTitles: true,
-                            getTitlesWidget: (value, meta) {
-                              return Text(value.toInt().toString(), style: const TextStyle(fontSize: 10));
-                            },
-                          ),
-                        ),
                       ),
-                      barTouchData: BarTouchData(
-                        enabled: false,
-                        touchTooltipData: BarTouchTooltipData(
-                          tooltipPadding: EdgeInsets.zero,
-                          tooltipMargin: 0,
-                          getTooltipItem: (group, groupIndex, rod, rodIndex) {
-                            return BarTooltipItem(
-                              '${rod.toY.toInt()} €',
-                              const TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                      gridData: FlGridData(show: true),
-                      alignment: BarChartAlignment.center,
-                      maxY: _berechneTopKategorien().values.fold(0.0, (prev, elem) => elem > prev ? elem : prev) * 1.2,
-                      borderData: FlBorderData(show: false),
                     ),
                   ),
-                ),
+                )
               ]
             ],
           ),

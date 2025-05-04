@@ -113,7 +113,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     return Map.fromEntries(
       ausgaben.entries.toList()
         ..sort((a, b) => b.value.compareTo(a.value))
-        ..length = ausgaben.length < 7 ? ausgaben.length : 7,
+        ..length = ausgaben.length < 5 ? ausgaben.length : 5,
     );
   }
 
@@ -128,7 +128,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
           BarChartRodData(
             toY: values[i],
             color: Colors.blueAccent,
-            width: 10,
+            width: 20,
             borderRadius: BorderRadius.zero,
           )
         ],
@@ -170,7 +170,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                   ),
                 ),
                 const SizedBox(height: 24),
-                const Text("Top 7 Kategorien nach Ausgaben"),
+                const Text("Top 5 Kategorien nach Ausgaben"),
                 const SizedBox(height: 12),
                 SizedBox(
                   height: 300,
@@ -187,7 +187,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                             getTitlesWidget: (value, meta) {
                               final index = value.toInt();
                               return Transform.translate(
-                                offset: const Offset(0, -30),
+                                offset: const Offset(0, -60),
                                 child: Transform.rotate(
                                   angle: -1.2,
                                   alignment: Alignment.center,
