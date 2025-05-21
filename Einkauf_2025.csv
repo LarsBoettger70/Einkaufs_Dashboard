@@ -1,0 +1,398 @@
+Nr;Datum;Artikel;Artikelbeschreibung;Kategorie;Produktart;Menge;Einheit;Preis (€);Supermarkt;Kommentar;Wer
+1;20.02.2025;AVOCADO ANGER.;Avocado (2x);Obst;Vegan;2,0;Stk;2,78;REWE;;Milo
+2;20.02.2025;KNOBLAUCH BIO;Knoblauch Bio;Gemüse;Vegan;1,0;Stk;0,79;REWE;;Milo
+3;20.02.2025;RISPENTOMATE;Rispentomate (0.642 kg);Gemüse;Vegan;1,0;Stk;1,60;REWE;;Milo
+4;20.02.2025;BIO EIER KL. S-L;Bio Eier Größe S-L;Eier;Vegetarisch;1,0;Stk;2,99;REWE;;Milo
+5;20.02.2025;LIMETTE BIO;Limette Bio;Obst;Vegan;1,0;Stk;0,59;REWE;;Milo
+6;20.02.2025;JA! SALAMI STICK;Ja! Salami Stick;Wurst;Fleisch;1,0;Stk;1,99;REWE;;Milo
+7;24.02.2025;BIO JOGHURT 3,8%;Bio Joghurt 3,8%;Milchprodukte;Vegetarisch;1,0;Stk;1,15;REWE;;Milo
+8;24.02.2025;BIO WEIDEMILCH;Bio Weidemilch (2x);Milchprodukte;Vegetarisch;2,0;Stk;2,50;REWE;;Levi
+9;24.02.2025;BEEREN-CRUNCHY;Beeren-Crunchy Müsli;Müsli & Getreide;Vegan;1,0;Stk;2,79;REWE;;Levi
+10;24.02.2025;KL.PAPIERTASCHE;Kleine Papiertasche;Sonstiges;Unbestimmt;1,0;Stk;0,20;REWE;;Levi
+11;24.02.2025;SAMMYS SANDWICH;Sammy’s Sandwich;Nüsse & Kerne;Vegan;1,0;Stk;2,49;REWE;;Levi
+12;24.02.2025;STICKADO KLASS.;Stickado Klassik Mini-Salami;Wurst;Unbestimmt;1,0;Stk;1,79;REWE;;Levi
+13;24.02.2025;HA.GESCHNETZEL;Hähnchengeschnetzeltes;Fleischwaren;Fleisch;1,0;Stk;6,63;REWE;;Levi
+14;24.02.2025;S-BRATWURST GROB;Schweinebratwurst grob;Fleischwaren;Fleisch;1,0;Stk;6,49;REWE;;Levi
+15;24.02.2025;APFEL JONAGOLD;Apfel Jonagold;Obst;Vegan;1,0;Stk;2,29;REWE;;Milo
+16;01.03.2025;ORANGE BIO;Bio Orangen;Obst;Vegan;1,0;Stk;2,69;REWE;;Levi
+17;01.03.2025;BIO MOZZARELLA;Bio Mozzarella (4x);Milchprodukte;Vegetarisch;4,0;Stk;5,16;REWE;;Levi
+18;01.03.2025;BIO WIENER WUERS;Bio Wiener Würstchen;Wurst;Unbestimmt;1,0;Stk;3,29;REWE;;Levi
+19;01.03.2025;RISPENTOMATE BIO;Bio Rispentomaten (2x);Gemüse;Vegan;2,0;Stk;4,38;REWE;;Levi
+20;01.03.2025;BANANE BIO;Bio Bananen (0.920 kg);Obst;Vegan;1,0;Stk;1,83;REWE;;Levi
+21;01.03.2025;ANANAS;Ananas;Obst;Vegan;1,0;Stk;1,69;REWE;;Levi
+22;01.03.2025;MANGO;Mango;Obst;Vegan;1,0;Stk;1,69;REWE;;Levi
+23;01.03.2025;SENF EXTRA;Senf Extra;Gewürze & Saucen;Unbestimmt;1,0;Stk;1,89;REWE;;Levi
+24;01.03.2025;TRAUBE HELL;Helle Trauben (0.902 kg);Obst;Vegan;1,0;Stk;4,50;REWE;;Levi
+25;03.03.2025;KOHLWURST;Kohlwurst;Wurst;Fleisch;1,0;Stk;8,29;REWE;;Levi
+26;03.03.2025;PIZZA TONNO;Pizza Tonno;Fertiggerichte;Unbestimmt;1,0;Stk;3,33;REWE;;Milo
+27;03.03.2025;BIO RINDERHACK;Bio Rinderhackfleisch (2x);Fleischwaren;Fleisch;2,0;Stk;10,58;REWE;;Levi
+28;03.03.2025;MUEN.WEISSWURST;Münchener Weißwurst;Wurst;Vegetarisch;1,0;Stk;3,39;REWE;;Levi
+29;03.03.2025;KERRYGOLD CHEDD;Kerrygold Cheddar;Milchprodukte;Vegetarisch;1,0;Stk;2,99;REWE;;Levi
+30;03.03.2025;RED BULL ZERO;Red Bull Zero;Getränke;Unbestimmt;1,0;Stk;1,39;REWE;;Milo
+31;03.03.2025;PFAND 0,25 EURO;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,25;REWE;;Milo
+32;03.03.2025;BRIOCHE BUNS 4ER;Brioche Buns 4er;Backwaren;Vegetarisch;1,0;Stk;1,69;REWE;;Levi
+33;03.03.2025;DATTELN;Datteln;Trockenfrüchte;Vegan;1,0;Stk;1,29;REWE;;Milo
+34;05.03.2025;SALAMISTICKS BIO;Salamisticks Bio;Wurst;Fleisch;1,0;Stk;2,29;REWE;;Milo
+35;05.03.2025;BIO MAULTASCHEN;Bio Maultaschen (3x);Fertiggerichte;Unbestimmt;3,0;Stk;6,57;REWE;;Levi
+36;05.03.2025;BIO WEIDEMILCH;Bio Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,25;REWE;;Milo
+37;05.03.2025;DATTELN;Datteln;Trockenfrüchte;Vegan;1,0;Stk;1,29;REWE;;Milo
+38;05.03.2025;SM KIWI LIM APF;Smoothie Kiwi-Limette-Apfel;Getränke;Vegan;1,0;Stk;1,49;REWE;;Levi
+39;05.03.2025;SM ANAN ERDB APF;Smoothie Ananas-Erdbeere-Apfel;Getränke;Vegan;1,0;Stk;1,49;REWE;;Levi
+40;05.03.2025;SM MANGO MARACUJ;Smoothie Mango-Maracuja;Getränke;Vegan;1,0;Stk;1,49;REWE;;Levi
+41;05.03.2025;SM JOHAN ERDB;Smoothie Johannisbeere-Erdbeere;Getränke;Vegan;1,0;Stk;1,49;REWE;;Levi
+42;05.03.2025;JOGHURTDRINK VAN;Joghurtdrink Vanille;Milchprodukte;Vegetarisch;1,0;Stk;0,99;REWE;;Levi
+43;05.03.2025;PFAND 0,25 EURO;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,25;REWE;;Levi
+44;11.03.2025;CASHEWKERNE;Cashewkerne;Nüsse & Kerne;Vegan;1,0;Stk;5,49;REWE;;Levi
+45;11.03.2025;POMM. GEF LEBERW;Pommersche Geflügelleberwurst;Wurst;Unbestimmt;1,0;Stk;2,69;REWE;;Levi
+46;11.03.2025;SCHI.ZWIEB.ME.WU;Schinken-Zwiebel Mettwurst;Wurst;Unbestimmt;1,0;Stk;2,29;REWE;;Levi
+47;11.03.2025;HAE.BRUSTFILE EU;Hähnchenbrustfilet EU;Fleischwaren;Fleisch;1,0;Stk;2,69;REWE;;Levi
+48;11.03.2025;SWIZZROCKER;Swizzrocker Käse;Milchprodukte;Vegetarisch;1,0;Stk;4,61;REWE;;Levi
+49;11.03.2025;HAEHNCHENBRUST;Hähnchenbrust;Fleischwaren;Fleisch;1,0;Stk;9,11;REWE;;Levi
+50;11.03.2025;SM ANAN ERDB APF;Smoothie Ananas-Erdbeere-Apfel;Getränke;Vegan;1,0;Stk;2,29;REWE;;Levi
+51;11.03.2025;PFAND 0,25 EURO;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,25;REWE;;Levi
+52;11.03.2025;SM JOHAN ERDB;Smoothie Johannisbeere-Erdbeere;Getränke;Vegan;1,0;Stk;2,29;REWE;;Levi
+53;11.03.2025;SM MANGO MARACUJ;Smoothie Mango-Maracuja;Getränke;Vegan;1,0;Stk;2,29;REWE;;Levi
+54;11.03.2025;SERRANO SCHINKEN;Serrano Schinken;Wurst;Fleisch;1,0;Stk;2,49;REWE;;Levi
+55;11.03.2025;SAMMYS SANDWICH;Sammy’s Sandwich;Nüsse & Kerne;Vegan;1,0;Stk;2,49;REWE;;Levi
+56;11.03.2025;TU PULLED TURKEY;TULIP Pulled Turkey;Fertiggerichte;Fleisch;1,0;Stk;5,99;REWE;;Levi
+57;11.03.2025;JA! MIWA CL;Ja! Mineralwasser Classic (2x);Getränke;Unbestimmt;2,0;Stk;0,30;REWE;;Milo
+58;11.03.2025;EAT H.RETTERTUE;Eat Happy Rettertüte;Fertiggerichte;Unbestimmt;1,0;Stk;9,99;REWE;;Levi
+59;11.03.2025;KASCHMIR;Küchenpapier Kaschmir (2x);Drogerie;Unbestimmt;2,0;Stk;3,18;REWE;;Milo
+60;11.03.2025;W.SAUBERKEIT;Wattepads Sauberkeit (2x);Drogerie;Vegetarisch;2,0;Stk;3,18;REWE;;Milo
+61;11.03.2025;COTTONELLE;Toilettenpapier Cottonelle (2x);Drogerie;Unbestimmt;2,0;Stk;3,18;REWE;;Milo
+62;11.03.2025;NATUERL.PFLEG.;Natürlich Pflege Feuchttücher (2x);Drogerie;Unbestimmt;2,0;Stk;3,18;REWE;;Milo
+63;11.03.2025;REXONA DEOSPRAY;Rexona Deospray;Drogerie;Unbestimmt;1,0;Stk;2,25;REWE;;Milo
+64;11.03.2025;NIVEA DG ENERGY;Nivea Duschgel Energy;Drogerie;Unbestimmt;1,0;Stk;1,75;REWE;;Milo
+65;11.03.2025;PFAND 0,25 EURO;Pfandflaschen (2x);Pfand;Unbestimmt;2,0;Stk;0,50;REWE;;Milo
+66;11.03.2025;GR. PAPIERTASCHE;Große Papiertasche;Sonstiges;Unbestimmt;1,0;Stk;0,25;REWE;;Levi
+67;11.03.2025;RB ERDNUSSBUTTER;Rewe Beste Erdnussbutter;Brotaufstriche;Vegetarisch;1,0;Stk;1,99;REWE;;Milo
+68;11.03.2025;OLIVEN ENTSTEINT;Oliven entsteint;Konserve;Vegetarisch;1,0;Stk;1,49;REWE;;Milo
+69;11.03.2025;BIO WEIDEMILCH;Bio Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,25;REWE;;Milo
+70;12.03.2025;BECKER APFELSCH;Becker Apfelschorle;Getränke;Unbestimmt;1,0;Stk;2,49;REWE;;Milo
+71;12.03.2025;CHERRYROMATOMATE;Cherry-Roma-Tomaten;Gemüse;Vegan;1,0;Stk;1,29;REWE;;Milo
+72;12.03.2025;PFAND 0,15 EUR;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,15;REWE;;Milo
+73;12.03.2025;OLIVEN ENTSTEINT;Oliven entsteint;Konserve;Vegetarisch;1,0;Stk;1,49;REWE;;Milo
+74;12.03.2025;FELDSALAT BIO;Feldsalat Bio;Gemüse;Vegan;1,0;Stk;1,79;REWE;;Milo
+75;12.03.2025;SALAKIS NATUR;Salakis Natur;Milchprodukte;Vegetarisch;1,0;Stk;3,59;REWE;;Milo
+76;14.03.2025;KL.PAPIERTASCHE;Kleine Papiertasche;Sonstiges;Unbestimmt;1,0;Stk;0,20;REWE;;Levi
+77;14.03.2025;TAGLIATELLE;Tagliatelle Pasta;Pasta;Unbestimmt;1,0;Stk;6,99;REWE;;Levi
+78;14.03.2025;CREMEFINE 15%;Rama Cremefine 15%;Milchprodukte;Vegetarisch;1,0;Stk;1,49;REWE;;Levi
+79;14.03.2025;KNOBLAUCHBROT;Knoblauchbrot;Backwaren;Unbestimmt;1,0;Stk;2,79;REWE;;Levi
+80;14.03.2025;CHAMP.BRAUN BIO;Braune Champignons (Bio);Gemüse;Vegan;1,0;Stk;2,39;REWE;;Levi
+81;14.03.2025;ROMARISPENTOM.;Roma Rispentomaten;Gemüse;Vegan;1,0;Stk;2,22;REWE;;Levi
+82;14.03.2025;BANANE BIO;Bio Bananen (1.572 kg);Obst;Vegan;1,0;Stk;3,13;REWE;;Levi
+83;14.03.2025;FR. WEIDEMILCH;Frische Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,15;REWE;;Levi
+84;15.03.2025;WEISSWURST;Weißwurst;Wurst;Vegetarisch;1,0;Stk;3,39;REWE;;Milo
+85;15.03.2025;GRUENKOHL FIX+FE;Grünkohl Fix & Fertig (2x);Fertiggerichte;Unbestimmt;2,0;Stk;4,98;REWE;;Milo
+86;15.03.2025;NATIV.OLIVENOEL;Natives Olivenöl;Öl & Essig;Unbestimmt;1,0;Stk;6,95;REWE;;Milo
+87;15.03.2025;BIO WEIDEMILCH;Bio Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,25;REWE;;Milo
+88;15.03.2025;KOHLWURST;Kohlwurst (4x);Wurst;Fleisch;4,0;Stk;17,96;REWE;;Milo
+89;15.03.2025;PIZZA MARGHERITA;Pizza Margherita;Fertiggerichte;Unbestimmt;1,0;Stk;3,49;REWE;;Milo
+90;15.03.2025;HAFERFLOCK. ZART;Zarte Haferflocken;Müsli & Getreide;Vegan;1,0;Stk;1,69;REWE;;Levi
+91;15.03.2025;HAEHN. SCHNITZEL;Hähnchenschnitzel;Fleischwaren;Fleisch;1,0;Stk;4,49;REWE;;Levi
+92;15.03.2025;TORTELLONI;Tortelloni Pasta;Pasta;Unbestimmt;1,0;Stk;3,49;REWE;;Milo
+93;15.03.2025;STUDENTENFUTTER;Studentenfutter;Nüsse & Kerne;Vegan;1,0;Stk;6,99;REWE;;Levi
+94;30.03.2025;ChickenNug.Compl.ak;Chicken Nuggets Complet Ak;Geflügelprodukte;Fleisch;1,0;Packung;3,99;Lidl;;Levi
+95;30.03.2025;Ofenlachs Knol.Pfeff;Ofenlachs Knoblauch Pfeffer;Fisch;Fisch;1,0;Packung;5,49;Lidl;;Levi
+96;02.04.2025;OFEN-BACKFISCH;Backfisch Ofenfertig (3x);Fertiggerichte;Unbestimmt;3,0;Stk;5,07;REWE;;Milo
+97;02.04.2025;PIZZAMEHL BIO;REWE Bio Pizzamehl;Backzutaten;Unbestimmt;1,0;Stk;1,69;REWE;;Milo
+98;02.04.2025;CAPELLINI NO.1;Barilla Capellini No.1 (2x);Pasta;Unbestimmt;2,0;Stk;4,18;REWE;;Milo
+99;02.04.2025;SANDW.FUERST PU.;Sandwich Fürst Pückler;Nüsse & Kerne;Vegan;1,0;Stk;1,99;REWE;;Milo
+100;02.04.2025;TROCKENBACKHEFE;Trockenbackhefe;Backzutaten;Unbestimmt;1,0;Stk;0,88;REWE;;Milo
+101;02.04.2025;WIENER WUERSTCH;Wiener Würstchen;Wurst;Unbestimmt;1,0;Stk;3,99;REWE;;Milo
+102;02.04.2025;SPAGHETTONI NO.7;Barilla Spaghettoni No.7 (2x);Pasta;Unbestimmt;2,0;Stk;4,18;REWE;;Milo
+103;04.04.2025;SAN PEL. LIMO;San Pellegrino Limonata (Zitrone), 2 Flaschen;Getränke;Vegan;2,0;Flasche;2,38;REWE;San Pellegrino Zitrone;Levi
+104;04.04.2025;AMARENA KIRSCH;REWE Feine Welt Amarena-Kirschen im Sirup;Süßigkeiten/Desserts;Vegan;1,0;Glas;1,88;REWE;;Levi
+105;04.04.2025;SCHINKE-GRILLER;Wilhelm Brandenburg Schinken-Griller, Bratwurst;Wurst;Fleisch;1,0;Packung;4,49;REWE;;Levi
+106;04.04.2025;HA INNENSPIESS;Wilhelm Brandenburg Hähnchen-Innenspieß, mariniert;Geflügelprodukte;Fleisch;1,0;Packung;4,49;REWE;;Levi
+107;04.04.2025;Pfand;Pfand für 2 Flaschen;Pfand;Nicht essbar;2,0;Flasche;0,50;REWE;Pfandflaschen;Levi
+108;04.04.2025;FISCHBURGER;Fischburger;Fertiggerichte;Unbestimmt;1,0;Stk;1,49;REWE;;Milo
+109;04.04.2025;ZWIEBEL SCHALOTT;Schalotten Zwiebeln;Gemüse;Vegan;1,0;Stk;1,19;REWE;;Milo
+110;04.04.2025;BIO NBG.ROSTBRAT;Bio Nürnberger Rostbratwürstchen;Fleischwaren;Fleisch;1,0;Stk;2,99;REWE;;Milo
+111;04.04.2025;SW-RUECKEN PAPRI;Wilhelm Brandenburg Schweine-Rückensteak in Paprikamarinade;Fleischwaren;Fleisch;1,0;Packung;4,99;REWE;;Levi
+112;04.04.2025;TOMATEN STUECKIG;Stückige Tomaten (2x);Konserve;Unbestimmt;2,0;Stk;1,30;REWE;;Milo
+113;05.04.2025;BIO GEM. BOUILL;Bio Gemüsebouillon;Würzmittel;Unbestimmt;1,0;Stk;1,49;REWE;;Milo
+114;05.04.2025;CHERRYROMATOMATE;Cherry-Roma-Tomaten (4x);Gemüse;Vegan;4,0;Stk;4,60;REWE;;Milo
+115;05.04.2025;PFAND 0,25 EURO;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,25;REWE;;Milo
+116;05.04.2025;JA! MIWA CL;ja! Mineralwasser Classic;Getränke;Unbestimmt;1,0;Stk;0,29;REWE;;Milo
+117;05.04.2025;TOMATENM.BASILI.;Tomatenmark mit Basilikum;Würzmittel;Unbestimmt;1,0;Stk;1,99;REWE;;Milo
+118;05.04.2025;BIO SCHLAGSAHNE;REWE Bio Schlagsahne;Milchprodukte;Vegetarisch;1,0;Stk;1,19;REWE;;Milo
+119;05.04.2025;JA! SALAMI STICK;ja! Salami Stick;Wurst;Fleisch;1,0;Stk;1,99;REWE;;Milo
+120;05.04.2025;MINI BROT KNOBL.;Mini Baguette Knoblauch;Backwaren;Unbestimmt;1,0;Stk;1,49;REWE;;Milo
+121;05.04.2025;ZUCCHINI GRUEN;Zucchini grün (1.176 kg);Gemüse;Vegan;1,0;Stk;1,75;REWE;;Milo
+122;05.04.2025;BRATWURST FEIN;Feine Bratwurst (0.757 kg);Fleischwaren;Vegetarisch;1,0;Stk;8,25;REWE;;Milo
+123;07.04.2025;SPAGHETTINI;Spaghettini Nudeln (3x);Pasta;Unbestimmt;3,0;Stk;4,47;REWE;;Levi
+124;07.04.2025;DELI. GEFLUEGELS;Delikatess Geflügelsauce;Saucen & Dips;Unbestimmt;1,0;Stk;1,49;REWE;;Levi
+125;07.04.2025;DELI. JAEGERSOSS;Delikatess Jägersauce;Saucen & Dips;Unbestimmt;1,0;Stk;1,49;REWE;;Levi
+126;07.04.2025;SCHNITZEL SAUCE;Schnitzel Sauce;Saucen & Dips;Unbestimmt;1,0;Stk;1,49;REWE;;Levi
+127;07.04.2025;CHILI-CHEESE NUG;Chili-Cheese Nuggets;Fertiggerichte;Vegetarisch;1,0;Stk;2,29;REWE;;Levi
+128;07.04.2025;KOENIGSBERGER KL;Königsberger Klopse;Fertiggerichte;Fleisch;1,0;Stk;2,19;REWE;;Levi
+129;07.04.2025;CHAMPIGNONS;Champignons (2x);Gemüse;Vegan;2,0;Stk;4,58;REWE;;Levi
+130;07.04.2025;BUTCHERS 1973;Butcher's 1973 Grillwürste (2x);Fleischwaren;Fleisch;2,0;Stk;2,98;REWE;;Levi
+131;07.04.2025;EISBERGSALAT;Eisbergsalat;Gemüse;Vegan;1,0;Stk;1,39;REWE;;Levi
+132;07.04.2025;ZWIEBEL ROT;Rote Zwiebeln;Gemüse;Vegan;1,0;Stk;1,15;REWE;;Levi
+133;07.04.2025;BRIOCHE BUNS 4ER;Brioche Burger Buns 4er (2x);Backwaren;Vegetarisch;2,0;Stk;3,38;REWE;;Levi
+134;07.04.2025;KALTBACH GOLD;Kaltbach Gold Käse;Milchprodukte;Vegetarisch;1,0;Stk;4,51;REWE;;Levi
+135;07.04.2025;CHEDDAR SCHEIBEN;Cheddar in Scheiben (2x);Milchprodukte;Vegetarisch;2,0;Stk;3,18;REWE;;Levi
+136;07.04.2025;BIO HACK SW RD;Bio Schweine-Rind-Hack;Fleischwaren;Fleisch;1,0;Stk;5,49;REWE;;Levi
+137;07.04.2025;BACKTEIG NUGGETS;Backteig Chicken Nuggets;Fertiggerichte;Vegetarisch;1,0;Stk;6,99;REWE;;Levi
+138;07.04.2025;RISPENTOMATE;Rispentomaten (0.582kg);Gemüse;Vegan;1,0;Stk;1,45;REWE;;Levi
+139;07.04.2025;KL.PAPIERTASCHE;Kleine Papiertasche;Sonstiges;Unbestimmt;1,0;Stk;0,20;REWE;;Levi
+140;07.04.2025;BIO RINDERHACK;Bio Rinderhackfleisch;Fleischwaren;Fleisch;1,0;Stk;4,99;REWE;;Levi
+141;07.04.2025;INGWER BIO;Ingwer Bio (0.036 kg);Gemüse;Vegan;1,0;Stk;0,28;REWE;;Milo
+142;07.04.2025;BAUMWOLLTASCHE;Baumwolltasche;Sonstiges;Unbestimmt;1,0;Stk;2,69;REWE;;Levi
+143;07.04.2025;BIO LACHSFILET;Bio Lachsfilet;Fisch;Fisch;1,0;Stk;7,49;REWE;;Milo
+144;07.04.2025;ZITRONE BIO;Zitrone Bio;Obst;Vegan;1,0;Stk;0,89;REWE;;Milo
+145;07.04.2025;LIMETTE BIO;Limette Bio;Obst;Vegan;1,0;Stk;0,39;REWE;;Milo
+146;07.04.2025;PAK CHOI BIO;Pak Choi Bio;Gemüse;Vegan;1,0;Stk;2,99;REWE;;Milo
+147;07.04.2025;AUBERGINE BIO;Aubergine Bio;Gemüse;Vegan;1,0;Stk;1,39;REWE;;Milo
+148;07.04.2025;BIO ENTRECOTE SK;Bio Entrecote Steak;Fleischwaren;Fleisch;1,0;Stk;11,43;REWE;;Levi
+149;07.04.2025;OFEN-BACKFISCH;Backfisch Ofenfertig;Fertiggerichte;Unbestimmt;1,0;Stk;1,69;REWE;;Milo
+150;07.04.2025;LAYS RED PAPRIKA;Lay's Chips Red Paprika;Nüsse & Kerne;Vegan;1,0;Stk;1,99;REWE;;Milo
+151;07.04.2025;LAYS O. PAPRIKA;Lay's Chips Oriental Paprika;Nüsse & Kerne;Vegan;1,0;Stk;1,99;REWE;;Milo
+152;07.04.2025;PEANUT BUTTER C.;Peanut Butter Cups;Süßigkeiten/Desserts;Vegetarisch;1,0;Stk;1,19;REWE;;Milo
+153;07.04.2025;GR. PAPIERTASCHE;Große Papiertasche;Sonstiges;Unbestimmt;1,0;Stk;0,25;REWE;;Milo
+154;07.04.2025;Frischerabatt;Frischerabatt auf Pangasiusfilet;Rabatt;Unbestimmt;1,0;Stk;-1,50;REWE;;Milo
+155;07.04.2025;PANGASIUSFILET;Pangasiusfilet;Fisch;Fisch;1,0;Stk;4,99;REWE;;Milo
+156;07.04.2025;DANKE TOIPA;Danke Toilettenpapier;Drogerie;Unbestimmt;1,0;Stk;3,69;REWE;;Milo
+157;07.04.2025;BIO OLIVEN;Bio Oliven;Konserve;Unbestimmt;1,0;Stk;1,89;REWE;;Milo
+158;10.04.2025;BIO WEIDEMILCH;Bio Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,25;REWE;;Milo
+159;14.04.2025;6-KORN FLOCKEN;6-Korn Flocken;Müsli & Getreide;Vegan;1,0;Stk;2,49;Alnatura;;Lars
+160;14.04.2025;ZITRONENSAFT;Zitronensaft;Getränke;Unbestimmt;1,0;Stk;1,59;Alnatura;;Lars
+161;14.04.2025;UHU KLEBER;Uhu Alleskleber Kraft;Haushaltswaren;Unbestimmt;1,0;Stk;4,69;OBI;;Milo
+162;14.04.2025;3IN1 TACER SET;3 in 1 Tacer-Set;Werkzeuge;Unbestimmt;1,0;Stk;15,49;OBI;;Milo
+163;14.04.2025;KOKOSMILCH;Kokosmilch;Milchalternative;Vegetarisch;1,0;Stk;1,89;Alnatura;;Lars
+164;14.04.2025;KLARE GEM.SUPPE;Klare Gemüsesuppe ohne Hefe;Würzmittel;Unbestimmt;1,0;Stk;2,19;Alnatura;;Lars
+165;14.04.2025;BROCCOLI;Broccoli (0.368 kg);Gemüse;Vegan;1,0;Stk;2,20;Alnatura;;Lars
+166;14.04.2025;OFEN-BACKFISCH;Backfisch Ofenfertig;Fertiggerichte;Unbestimmt;1,0;Stk;1,69;REWE;;Milo
+167;14.04.2025;SUPREMA SALAMI;Suprema Salami (2x);Wurst;Fleisch;2,0;Stk;10,98;REWE;;Milo
+168;14.04.2025;UK-LATTEN;UK – Latte Fi/Ta gehobelt;Baumaterialien;Unbestimmt;1,0;Stk;22,51;OBI;;Milo
+169;14.04.2025;ANZUCHTTOPF;Anzuchttopf 3 Stück;Garten;Unbestimmt;1,0;Stk;10,77;OBI;;Milo
+170;14.04.2025;UNTERSETZER;Untersetzer;Haushaltswaren;Unbestimmt;1,0;Stk;8,99;OBI;;Milo
+171;14.04.2025;HANDSAEGE;Handsäge Holz;Werkzeuge;Unbestimmt;1,0;Stk;19,00;OBI;;Milo
+172;14.04.2025;OSB 3 STUMPFT;OSB-Platte 3 stumpf;Baumaterialien;Unbestimmt;1,0;Stk;5,45;OBI;;Milo
+173;15.04.2025;ECO WASCHPULVER;eco Waschpulver;Haushaltswaren;Unbestimmt;1,0;Stk;5,77;Budni;;Lars
+174;15.04.2025;BIO OLIVENÖL;Bio Alma Olivenöl;Öl & Essig;Unbestimmt;1,0;Stk;8,99;Budni;;Lars
+175;15.04.2025;BIO MOZZARELLA;Bio Mozzarella (2x);Milchprodukte;Vegetarisch;2,0;Stk;5,78;Budni;;Lars
+176;15.04.2025;FAVORA TASCHENTUECHER;Favora Taschentücher (2x);Drogerie;Unbestimmt;2,0;Stk;1,98;Budni;;Lars
+177;15.04.2025;PFAND;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,15;Budni;;Lars
+178;15.04.2025;FRITZ-LIMO ORANGE;Fritz-Limo Orange 0,5 l;Getränke;Unbestimmt;1,0;Stk;1,89;Budni;;Lars
+179;15.04.2025;FAVORA TASCHENTUECHER EXTRA;Favora Taschentücher Extraweich;Drogerie;Unbestimmt;1,0;Stk;1,39;Budni;;Lars
+180;16.04.2025;ZUCCHINI;Zucchini (0.416 kg);Gemüse;Vegan;1,0;Stk;1,66;Alnatura;;Lars
+181;16.04.2025;PAPRIKA ROT;Paprika rot (0.398 kg);Gemüse;Vegan;1,0;Stk;3,94;Alnatura;;Lars
+182;16.04.2025;CHICOREE;Chicorée (0.088 kg);Gemüse;Vegan;1,0;Stk;0,87;Alnatura;;Lars
+183;16.04.2025;ORANGEN;Orangen (0.940 kg);Obst;Vegan;1,0;Stk;4,69;Alnatura;;Lars
+184;16.04.2025;BANANEN;Bananen (0.658 kg, Wochenangebot);Obst;Vegan;1,0;Stk;1,64;Alnatura;;Lars
+185;16.04.2025;KEFIR 1,5%;Kefir mild 1,5%;Milchprodukte;Vegetarisch;1,0;Stk;1,29;Alnatura;;Lars
+186;16.04.2025;GEWÜRZGURKEN;Gewürzgurken (2x);Konserve;Unbestimmt;2,0;Stk;2,78;Alnatura;;Lars
+187;16.04.2025;EIER 10ER;Alnatura Eier 10er Wendt;Eier;Vegetarisch;1,0;Stk;5,29;Alnatura;;Lars
+188;16.04.2025;CHAMPIGNONS BRAUN;Champignons braun (0.356 kg);Gemüse;Vegan;1,0;Stk;3,52;Alnatura;;Lars
+189;16.04.2025;APFEL GALA;Sparpreis Äpfel 1kg gep. Gala;Obst;Vegan;1,0;Stk;3,49;Alnatura;;Lars
+190;16.04.2025;RABATT BANANEN;Wochenangebot Rabatt auf Bananen;Rabatt;Unbestimmt;1,0;Stk;-0,33;Alnatura;;Lars
+191;16.04.2025;JOGHURT 3,8%;Weidemilch-Joghurt natur 3,8%;Milchprodukte;Vegetarisch;1,0;Stk;2,78;Alnatura;;Lars
+192;16.04.2025;Alleskleber;UHU Alleskleber;Haushaltswaren;Unbestimmt;1,0;Tube;2,99;REWE;;Milo
+193;16.04.2025;KARTOFFELKNÖDEL;6 Kartoffelknödel;Fertiggerichte;Unbestimmt;1,0;Stk;0,99;REWE;;Levi
+194;16.04.2025;HA-MINSCHNITZEL;Hähnchen-Minischnitzel;Fleischwaren;Fleisch;1,0;Stk;7,28;REWE;;Levi
+195;16.04.2025;SPAGHETTONI;Spaghettoni No. 7;Teigwaren;Unbestimmt;1,0;Stk;2,09;REWE;;Levi
+196;16.04.2025;SAUCE PESTO;Pesto-Sauce (2x);Pesto;Unbestimmt;2,0;Stk;6,98;REWE;;Levi
+197;16.04.2025;PAPIERTÜTE;Papiertüte groß;Sonstiges;Unbestimmt;1,0;Stk;0,50;Alnatura;;Lars
+198;16.04.2025;Pizza Ghostbuster;REWE Tiefkühlpizza Ghostbuster-Edition;Tiefkühlkost;Unbestimmt;1,0;Stk;4,69;REWE;;Milo
+199;16.04.2025;Pizza Prosciutto Funghi;REWE Beste Wahl Pizza Prosciutto e Funghi;Tiefkühlkost;Unbestimmt;1,0;Stk;4,69;REWE;;Milo
+200;16.04.2025;Grana Padano;Grana Padano Hartkäse;Käse;Vegetarisch;1,0;Stk;2,89;REWE;;Milo
+201;16.04.2025;Tomaten-Mozzarella Sauce;Barilla Tomaten-Mozzarella Sauce;Saucen;Unbestimmt;1,0;Glas;1,89;REWE;;Milo
+202;16.04.2025;Tomate-Basilikum Sauce;Barilla Tomate-Basilikum Sauce;Saucen;Unbestimmt;1,0;Glas;1,89;REWE;;Milo
+203;17.04.2025;GUACAMOLE DIP;Guacamole Dip;Aufstriche;Unbestimmt;1,0;Stk;2,49;REWE;;Lian
+204;17.04.2025;GEROLSTEIN MEDIO;Gerolsteiner Mineralwasser Medium;Getränke;Vegetarisch;1,0;Stk;0,99;REWE;;Lian
+205;17.04.2025;PASSIERTE TOMATE;Passierte Tomaten;Konserve;Unbestimmt;1,0;Stk;0,99;REWE;;Lian
+206;17.04.2025;SAHNE KOCHEN;Sahne zum Kochen;Milchprodukte;Vegetarisch;1,0;Stk;1,69;REWE;;Lian
+207;17.04.2025;SCHW. BOHN. CHILI;Schwarze Bohnen Chili;Konserve;Unbestimmt;1,0;Stk;1,39;REWE;;Lian
+208;17.04.2025;APFELSAFT TRUEB;Apfelsaft naturtrüb;Getränke;Unbestimmt;1,0;Stk;8,19;REWE;;Lian
+209;17.04.2025;COCKTAILRISPE;Cocktailtomaten Rispe;Gemüse;Vegan;1,0;Stk;2,99;REWE;;Lian
+210;17.04.2025;FRISCHERABATT;Frischerabatt auf Hackfleisch;Rabatt;Unbestimmt;1,0;Stk;-3,30;REWE;;Lian
+211;17.04.2025;BIO HACK SW RD;Bio Hackfleisch Schwarzwald (2x);Fleischwaren;Fleisch;2,0;Stk;10,98;REWE;;Lian
+212;17.04.2025;PFAND;Pfandflasche;Pfand;Unbestimmt;1,0;Stk;0,25;REWE;;Lian
+213;17.04.2025;BIO WEIDEMILCH;Bio Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,25;REWE;;Lian
+214;17.04.2025;NAT. PFLEGEND;Natuvell Pflege-Dusche;Drogerie;Unbestimmt;1,0;Stk;1,59;REWE;;Lian
+215;17.04.2025;NAT. PFLEGEN;Natuvell Pflegelotion;Drogerie;Unbestimmt;1,0;Stk;1,59;REWE;;Lian
+216;17.04.2025;TORTILLAS;Tortillas 25 cm;Backwaren;Unbestimmt;1,0;Stk;5,99;REWE;;Lian
+217;18.04.2025;BIO RUMPSTEAK;Bio Rumpsteak (0,255 kg);Fleischwaren;Fleisch;1,0;Stk;7,65;Lidl;;Levi
+218;19.04.2025;AUSPRESSPISTOLE;Auspresspistole;Werkzeuge;Unbestimmt;1,0;Stk;4,89;OBI;;Lars
+219;19.04.2025;KLEBER AKUSTIK;Kleber für Akustikplatten;Baumaterialien;Unbestimmt;1,0;Stk;12,59;OBI;;Lars
+220;22.04.2025;LINSEN SALAT;Linsensalat;Fertiggerichte;Unbestimmt;1,0;Stk;2,49;Alnatura;;Lars
+221;22.04.2025;ZUCCHINI;Zucchini (0,294 kg);Gemüse;Vegan;1,0;Stk;1,17;Alnatura;;Lars
+222;22.04.2025;WIENER;Wiener (0,264 kg);Fleischwaren;Fleisch;1,0;Stk;7,10;Alnatura;;Lars
+223;22.04.2025;ORANGEN;Orangen (0,708 kg);Obst;Vegan;1,0;Stk;3,53;Alnatura;;Lars
+224;22.04.2025;NEKTARINEN;Nektarinen (0,300 kg);Obst;Vegan;1,0;Stk;2,97;Alnatura;;Lars
+225;22.04.2025;TOMATENSTUECKE;Tomatenstücke Natur;Konserve;Unbestimmt;1,0;Stk;0,79;Alnatura;;Lars
+226;22.04.2025;RABATT ORANGEN;Wochenangebot Rabatt auf Orangen;Rabatt;Unbestimmt;1,0;Stk;-0,71;Alnatura;;Lars
+227;22.04.2025;PAPRIKA ROT;Paprika rot (0,182 kg);Gemüse;Vegan;1,0;Stk;1,80;Alnatura;;Lars
+228;23.04.2025;SCHLEMMERFILET;TK Iglo Schlemmerfilet à la Bordelaise;Fisch;Fisch;1,0;Stk;4,49;Aldi;;Levi
+229;23.04.2025;TK Iglo Filegro;TK Iglo Filegro Backfisch;Tiefkühlkost;Unbestimmt;1,0;Pack;4,49;Aldi;;Levi
+230;23.04.2025;FILEGRO;TK Iglo Filegro Backfisch;Fisch;Fisch;1,0;Stk;4,49;Aldi;;Levi
+231;23.04.2025;Pfandwert;Pfandwert für Flasche;Pfand;Unbestimmt;1,0;Stk;0,25;Aldi;;Levi
+232;23.04.2025;TK Iglo Schlemmerfilet;TK Iglo Schlemmerfilet à la Bordelaise;Tiefkühlkost;Unbestimmt;1,0;Pack;4,49;Aldi;;Levi
+233;23.04.2025;LACHSFILET;Tiefkühl Lachsfiletportionen;Fisch;Fisch;1,0;Stk;9,99;Aldi;;Levi
+234;23.04.2025;KEFIR;Kalinka Kefir mild (Müller);Milchprodukte;Vegetarisch;1,0;Stk;1,29;Aldi;;Levi
+235;23.04.2025;PFAND;Pfandwert;Pfand;Unbestimmt;1,0;Stk;0,25;Aldi;;Levi
+236;23.04.2025;Lachsfiletportionen;Tiefkühl Lachsfiletportionen;Tiefkühlkost;Unbestimmt;1,0;Pack;9,99;Aldi;;Levi
+237;23.04.2025;Müller Kalinka Kefir;Kalinka Kefir mild (Müller);Milchprodukte;Vegetarisch;1,0;Stk;1,29;Aldi;;Levi
+238;24.04.2025;REINIGER;Frosch Allzweckreiniger Lavendel;Haushaltswaren;Vegetarisch;1,0;Stk;1,95;Budni;;Lars
+239;24.04.2025;SALT MIX;Salatkernemix;Nüsse & Kerne;Vegan;1,0;Stk;2,99;Alnatura;;Lars
+240;24.04.2025;EIER;Bio-Eier 6er Hähnlein;Eier;Vegetarisch;1,0;Stk;3,29;Alnatura;;Lars
+241;24.04.2025;SCHMAND;Schmand aus Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,99;Alnatura;;Lars
+242;24.04.2025;Weidemilch Creme Fraiche;Creme Fraîche aus Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,19;Alnatura;;Lars
+243;24.04.2025;QUARK 40%;Weidemilchquark 40% Fett;Milchprodukte;Vegetarisch;1,0;Stk;1,39;Alnatura;;Lars
+244;24.04.2025;Leberkaese;Leberkäse Thekenware (0,256 kg);Fleisch & Wurst;Fleisch;0,3;kg;3,81;Glasmeyer's Rewe;;Levi
+245;24.04.2025;STRAUCHTOMATEN;Strauchtomaten (0,282 kg);Gemüse;Vegan;1,0;Stk;1,69;Alnatura;;Lars
+246;24.04.2025;WC REINIGER;Frosch WC-Reiniger Citrus;Haushaltswaren;Vegetarisch;1,0;Stk;2,03;Budni;;Lars
+247;24.04.2025;Champignons braun;Braune Champignons (0,260 kg);Obst & Gemüse;Vegan;1,0;Stk;2,57;Alnatura;;Lars
+248;24.04.2025;Reibekäse;Bio Reibekäse gerieben;Käse;Vegetarisch;1,0;Stk;2,99;Alnatura;;Lars
+249;24.04.2025;PEPERONI;Peperoni (0,020 kg);Gemüse;Vegan;1,0;Stk;0,40;Alnatura;;Lars
+250;24.04.2025;Papiertüte klein;Papiertüte klein (Alnatura);Verpackungen;Vegetarisch;1,0;Stk;0,00;Alnatura;;Lars
+251;24.04.2025;RABATT Champignons;Wochenrabatt auf Champignons;Rabatt;Unbestimmt;1,0;Stk;-0,57;Alnatura;;Lars
+252;24.04.2025;KNOBLAUCH;Knoblauch (0,060 kg);Gemüse;Vegan;1,0;Stk;0,89;Alnatura;;Lars
+253;24.04.2025;KLEBEBAND 10M;Klebeband 10 Meter;Haushaltswaren;Unbestimmt;1,0;Stk;4,99;REWE;;Milo
+254;24.04.2025;CREME FRAICHE;Creme Fraîche aus Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,19;Alnatura;;Lars
+255;24.04.2025;Gouda gerieben;Bio Gouda gerieben;Käse;Vegetarisch;1,0;Stk;2,99;Alnatura;;Lars
+256;24.04.2025;MUESLI BASIS;Basis-Müsli Hafer ungesüßt;Müsli & Getreide;Vegan;1,0;Stk;2,99;Alnatura;;Lars
+257;24.04.2025;Salatkerne Mix;Salatkernemix;Nüsse & Kerne;Vegan;1,0;Stk;2,99;Alnatura;;Lars
+258;24.04.2025;REIBEKAESE;Bio Reibekäse gerieben;Milchprodukte;Vegetarisch;1,0;Stk;2,99;Alnatura;;Lars
+259;24.04.2025;GOUDA;Bio Gouda gerieben;Milchprodukte;Vegetarisch;1,0;Stk;2,99;Alnatura;;Lars
+260;24.04.2025;Strauchtomaten;Strauchtomaten (0,282 kg);Obst & Gemüse;Vegan;1,0;Stk;1,69;Alnatura;;Lars
+261;24.04.2025;Peperoni;Peperoni (0,020 kg);Obst & Gemüse;Vegan;1,0;Stk;0,40;Alnatura;;Lars
+262;24.04.2025;Knoblauch;Knoblauch (0,060 kg);Obst & Gemüse;Vegan;1,0;Stk;0,89;Alnatura;;Lars
+263;24.04.2025;Weidemilchquark 40%;Weidemilchquark 40% Fett;Milchprodukte;Vegetarisch;1,0;Stk;1,39;Alnatura;;Lars
+264;24.04.2025;CHAMPIGNONS BRAUN;Braune Champignons (0,260 kg);Gemüse;Vegan;1,0;Stk;2,57;Alnatura;;Lars
+265;24.04.2025;Frosch Reiniger;Frosch Allzweckreiniger Lavendel;Haushaltswaren;Vegetarisch;1,0;Stk;1,95;Budni;;Lars
+266;24.04.2025;Papiertasche;Papiertasche Rewe;Verpackungen;Unbestimmt;1,0;Stk;0,25;Glasmeyer's Rewe;;Levi
+267;24.04.2025;Eier 6er;Bio-Eier 6er Hähnlein;Eier;Vegetarisch;1,0;Pack;3,29;Alnatura;;Lars
+268;24.04.2025;Protein Mousse;Protein Mousse;Süßigkeiten/Desserts;Vegetarisch;1,0;Becher;2,69;Glasmeyer's Rewe;;Levi
+269;24.04.2025;Frosch WC-Reiniger;Frosch WC-Reiniger Citrus;Haushaltswaren;Vegetarisch;1,0;Stk;2,03;Budni;;Lars
+270;24.04.2025;Rosenbroetchen;Rosenbrötchen dunkel;Backwaren;Unbestimmt;1,0;Stk;0,39;Glasmeyer's Rewe;;Levi
+271;24.04.2025;Weidemilch Schmand;Schmand aus Weidemilch;Milchprodukte;Vegetarisch;1,0;Stk;1,99;Alnatura;;Lars
+272;24.04.2025;Basis Müsli Hafer;Basis Müsli Hafer ungesüßt;Müsli & Getreide;Vegan;1,0;Stk;2,69;Alnatura;;Lars
+273;24.04.2025;RABATT CHAMPIGNONS;Wochenrabatt auf Champignons;Rabatt;Unbestimmt;1,0;Stk;-0,57;Alnatura;;Lars
+274;24.04.2025;PAPIERTUETE;Papiertüte klein (Alnatura);Sonstiges;Unbestimmt;1,0;Stk;0,12;Alnatura;;Lars
+275;24.04.2025;Pommes;Süßkartoffel-Pommes TK;Tiefkühlkost;Unbestimmt;1,0;Pack;1,59;Glasmeyer's Rewe;;Levi
+276;28.04.2025;Avocado;Avocado, Stückware;Obst & Gemüse;Vegan;1,0;Stk;1,59;REWE;;Milo
+277;28.04.2025;Lenor Waschmittel;Lenor Waschmittel Aprilfrisch 2x3,79 €;Haushaltswaren;Unbestimmt;2,0;Flasche;7,58;REWE;;Milo
+278;28.04.2025;Bio Weidemilch;REWE Bio Weidemilch 3,8%;Milchprodukte;Vegetarisch;1,0;Flasche;1,25;REWE;;Milo
+279;28.04.2025;Frischkäse Natur;REWE Bio Frischkäse Natur;Milchprodukte;Vegetarisch;1,0;Becher;1,59;REWE;;Milo
+280;28.04.2025;Sesam Bagels;Bagels mit Sesam;Backwaren;Unbestimmt;1,0;Pack;1,89;REWE;;Milo
+281;28.04.2025;Weichspüler;Lenor Weichspüler Aprilfrisch;Haushaltswaren;Vegetarisch;1,0;Flasche;3,99;REWE;;Milo
+282;28.04.2025;Rispentomaten;Bio Rispentomaten;Obst & Gemüse;Vegan;1,0;Pack;2,69;REWE;;Milo
+283;29.04.2025;Papiertüte klein;Tara 12g Papiertüte klein;Verpackungen;Vegetarisch;1,0;Stk;0,00;Alnatura;;GFE
+284;29.04.2025;Bio Eier 10er;REWE Bio Eier 10er Packung;Eier;Vegetarisch;1,0;Pack;5,09;REWE;;Milo
+285;29.04.2025;Olivenöl;REWE Bio Olivenöl nativ extra;Öle & Fette;Unbestimmt;1,0;Flasche;5,99;REWE;;Milo
+286;29.04.2025;Waldfrucht;REWE Beste Wahl Waldfrucht Fruchtaufstrich;Aufstriche;Unbestimmt;1,0;Glas;1,49;REWE;;Milo
+287;29.04.2025;Himbeeren;REWE Himbeeren (2 x 2,49 €);Obst & Gemüse;Vegan;2,0;Schale;4,98;REWE;;Milo
+288;29.04.2025;Pfand;Pfand für ja! Mineralwasserflasche;Pfand;Nicht essbar;1,0;Stk;0,25;REWE;;Milo
+289;29.04.2025;Mineralwasser Classic;ja! Mineralwasser Classic 0,5 l;Getränke;Unbestimmt;1,0;Flasche;0,29;REWE;;Milo
+290;29.04.2025;Rispen Tomate Honeycomb;Rispen Tomate Honeycomb Pflanze;Pflanzen;Unbestimmt;1,0;Stk;7,98;Alnatura;;GFE
+291;29.04.2025;Riffels Chili;Funny Frisch Riffels Chili Chips;Snacks;Unbestimmt;1,0;Pack;2,49;REWE;;Milo
+292;29.04.2025;Parmigiano Reggiano;Parmigiano Reggiano am Stück;Käse;Vegetarisch;1,0;Stk;4,49;REWE;;Milo
+293;29.04.2025;Champi braun;Champignons braun (0,352 kg);Obst & Gemüse;Vegan;1,0;kg;3,48;Alnatura;;GFE
+294;29.04.2025;Schinkenwürfel;REWE Schinkenwürfel (3 x 2,49 €);Fleisch & Wurst;Fleisch;3,0;Pack;7,47;REWE;;Milo
+295;29.04.2025;Himbeeren Pflanze;Himbeerpflanze 5,24 €;Pflanzen;Unbestimmt;1,0;Stk;6,99;Alnatura;;GFE
+296;29.04.2025;Papiertasche;Papiertasche Alnatura;Verpackungen;Unbestimmt;1,0;Stk;0,25;Alnatura;;GFE
+297;29.04.2025;Kekse Original;REWE Beste Wahl Kekse Original;Süßigkeiten/Desserts;Unbestimmt;1,0;Pack;1,49;REWE;;Milo
+298;29.04.2025;Erbsen Möhren;Erbsen und Möhren Glas;Konserve;Unbestimmt;1,0;Glas;1,49;Alnatura;;GFE
+299;29.04.2025;Joghurt Natur;Joghurt Natur, 500g;Milchprodukte;Vegetarisch;1,0;Becher;2,89;Alnatura;;GFE
+300;29.04.2025;Fadennudeln;Alnatura Fadennudeln;Teigwaren;Unbestimmt;1,0;Pack;2,98;Alnatura;;GFE
+301;29.04.2025;RABATT Avocado;Wochenangebot Avocado;Rabatt;Unbestimmt;1,0;Stk;-2,14;Alnatura;;GFE
+302;29.04.2025;Brombeeren Pflanze;Brombeerenpflanze 5,24 €;Pflanzen;Unbestimmt;1,0;Stk;6,99;Alnatura;;GFE
+303;29.04.2025;RABATT 25%;Rabatt 25% auf Pflanze;Rabatt;Unbestimmt;1,0;Stk;-1,75;Alnatura;;GFE
+304;29.04.2025;Bananen;Bananen (0,740 kg);Obst & Gemüse;Vegan;1,0;kg;1,84;Alnatura;;GFE
+305;29.04.2025;Avocado;Avocado lose (0,648 kg);Obst & Gemüse;Vegan;1,0;kg;6,42;Alnatura;;GFE
+306;30.04.2025;Eier 6er;Eier 6er Pack Hähnlein;Eier;Vegetarisch;1,0;Pack;3,29;Alnatura;;Lars
+307;30.04.2025;Feta;Feta, 2 x 2,99 €;Käse;Vegetarisch;1,0;Stk;2,99;Alnatura;;Lars
+308;30.04.2025;RABATT 25%;25% Rabatt auf Hackfleisch;Rabatt;Unbestimmt;1,0;Stk;-1,50;Alnatura;;Lars
+309;30.04.2025;Hackfleisch gemischt;Bio-Hackfleisch gemischt 4,49 €/St;Fleisch & Wurst;Vegetarisch;1,0;Pack;5,99;Alnatura;;Lars
+310;30.04.2025;RABATT Woche;Wochenangebot auf Radieschen;Rabatt;Unbestimmt;1,0;Stk;-1,00;Alnatura;;Lars
+311;30.04.2025;Artischocken;Artischocken in Salzlake;Konserve;Unbestimmt;1,0;Glas;4,99;Alnatura;;Lars
+312;30.04.2025;Hummus Classic;Hummus Classic;Aufstriche;Unbestimmt;1,0;Becher;3,98;Alnatura;;Lars
+313;30.04.2025;Bagels Natur;REWE Bagels Natur;Backwaren;Unbestimmt;1,0;Pack;1,89;REWE;;Milo
+314;30.04.2025;Mozzarella Minis;Bio-Mozzarella Minis 2x1,99;Käse;Vegetarisch;2,0;Stk;3,98;Alnatura;;Lars
+315;30.04.2025;Radieschen;Bund Radieschen;Obst & Gemüse;Vegan;1,0;Bund;2,49;Alnatura;;Lars
+316;30.04.2025;Wiener Würstchen;Bio-Wiener Würstchen;Fleisch & Wurst;Fleisch;1,0;Pack;3,99;Alnatura;;Lars
+317;30.04.2025;Bagels Mehrkorn;REWE Bagels Mehrkorn;Backwaren;Unbestimmt;1,0;Pack;1,89;REWE;;Milo
+318;30.04.2025;Frischkäse Natur;REWE Bio Frischkäse Natur;Milchprodukte;Vegetarisch;1,0;Becher;1,59;REWE;;Milo
+319;30.04.2025;Cottage Cheese;Cottage Cheese 2x1,99;Milchprodukte;Vegetarisch;2,0;Becher;3,98;Alnatura;;Lars
+320;01.05.2025;Grillsteaks Paprika;Sommersteaks Paprika, 2x 3,49 €;Fleisch & Wurst;Fleisch;2,0;Pack;6,98;Lidl;;Milo
+321;01.05.2025;Pfand;Pfand für Mineralwasserflasche;Pfand;Nicht essbar;1,0;Stk;0,25;Lidl;;Milo
+322;01.05.2025;Mineralwasser;Mineralwasser mit Kohlensäure;Getränke;Unbestimmt;1,0;Flasche;0,15;Lidl;;Milo
+323;01.05.2025;Romatomaten;Romatomaten lose;Obst & Gemüse;Vegan;1,0;Pack;1,49;Lidl;;Milo
+324;01.05.2025;Hähnchengrillfackeln;Hähnchen-Grillfackeln Pfeffer;Fleisch & Wurst;Fleisch;1,0;Pack;4,49;Lidl;Preis auf Bon durchgestrichen – evtl. reduziert;Milo
+325;02.05.2025;Toilettenpapier feucht;Alnatura feuchtes Toilettenpapier 2 x 1,19 €;Haushaltswaren;Unbestimmt;2,0;Pack;2,99;Alnatura;;Lars
+326;02.05.2025;Passierte Tomaten;Alnatura Passierte Tomaten;Konserve;Unbestimmt;1,0;Packung;2,38;Alnatura;;Lars
+327;02.05.2025;Saaten Mischung;Alnatura Saaten Mischung für Salate oder Brot;Nüsse & Kerne;Vegan;1,0;Packung;2,99;Alnatura;;Lars
+328;02.05.2025;Pesto Genovese;Alnatura Frisches Pesto Genovese;Aufstriche;Unbestimmt;1,0;Becher;2,89;Alnatura;;Lars
+329;02.05.2025;Handkäse;Alnatura Hessischer Handkäse M;Aufschnitt;Vegetarisch;1,0;Packung;2,09;Alnatura;;Lars
+330;02.05.2025;Mais;Alnatura Mais im Glas;Konserve;Unbestimmt;1,0;Glas;1,49;Alnatura;;Lars
+331;02.05.2025;Zwiebeln gelb;Gelbe Zwiebeln (0,118 kg x 3,49 €/kg);Obst & Gemüse;Vegan;0,1;kg;0,41;Alnatura;;Lars
+332;02.05.2025;Strauchtomaten;Strauchtomaten (1,124 kg x 5,99 €/kg);Obst & Gemüse;Vegan;1,1;kg;6,73;Alnatura;;Lars
+333;02.05.2025;Tilsiter;Ostenfelder Tilsiter (0,206 kg x 22,9 €/kg);Aufschnitt;Unbestimmt;0,2;kg;4,72;Alnatura;;Lars
+334;02.05.2025;Gouda jung;Alnatura Gouda jung (0,278 kg x 14,9 €/kg);Aufschnitt;Unbestimmt;0,3;kg;4,14;Alnatura;;Lars
+335;02.05.2025;Zwiebeln gelb;Gelbe Zwiebeln (0,112 kg x 3,49 €/kg);Obst & Gemüse;Vegan;0,1;kg;0,39;Alnatura;;Lars
+336;02.05.2025;Salat rot;Roter Paprika-Salat (0,270 kg x 9,90 €/kg);Obst & Gemüse;Vegan;0,3;kg;2,67;Alnatura;;Lars
+337;03.05.2025;SW-Nackensteak;Schweinenackensteak, 0,299 kg;Fleisch & Wurst;Fleisch;0,299;kg;3,14;REWE;;Lars
+338;03.05.2025;Gurken-Knoblauch-Aufstrich;Aufstrich Gurke Knoblauch;Aufstriche;Unbestimmt;1,0;Stk;1,99;REWE;;Lars
+339;03.05.2025;Küçük Ekmek;Küçük Ekmek, 2 Stk à 1,20 €;Backwaren;Unbestimmt;2,0;Stk;2,40;Hisar Back Haus;;Lars
+340;03.05.2025;Chili rot;Chili rot, 0,018 kg;Gemüse;Vegan;0,018;kg;0,23;REWE;;Milo
+341;03.05.2025;Espresso doppelt;Espresso doppelt;Getränke;Unbestimmt;1,0;Stk;3,00;Hisar Back Haus;;Lars
+342;03.05.2025;Küçük Ekmek;Küçük Ekmek, 5 Stk à 1,00 €;Backwaren;Unbestimmt;5,0;Stk;5,00;Hisar Back Haus;;Lars
+343;03.05.2025;Mascarpone;Mascarpone 40%, 2 x 2,29€;Milchprodukte;Vegetarisch;2,0;Stk;4,58;REWE;;Milo
+344;03.05.2025;Uludag Apfelschorle;Uludag Apfelschorle;Getränke;Unbestimmt;1,0;Stk;2,35;Hisar Back Haus;;Lars
+345;03.05.2025;Zitrone;Zitrone, Stückware;Obst;Vegan;1,0;Stk;0,89;REWE;;Milo
+346;03.05.2025;Himbeere;Himbeeren, 3 x 2,49€;Obst;Vegan;3,0;Stk;7,47;REWE;;Milo
+347;03.05.2025;Broccoli Bio;Bio-Broccoli;Gemüse;Vegan;1,0;Stk;2,29;REWE;;Milo
+348;03.05.2025;Paprika rot;Paprika rot, 0,502 kg;Gemüse;Vegan;0,502;kg;3,51;REWE;;Milo
+349;03.05.2025;Leergut;Leergut Einweg;Pfand;Unbestimmt;1,0;Stk;-0,25;REWE;;Lars
+350;03.05.2025;Hummus Natur;Hummus Natur;Aufstriche;Unbestimmt;1,0;Stk;0,99;REWE;;Lars
+351;03.05.2025;Löffelbiskuit;Löffelbiskuit;Süßigkeiten/Desserts;Vegetarisch;1,0;Stk;1,49;REWE;;Milo
+352;03.05.2025;Paprika edelsüß;Paprikapulver edelsüß;Würzmittel;Vegan;1,0;Stk;2,39;REWE;;Milo
+353;03.05.2025;Schlagsahne;Schlagsahne 33%;Milchprodukte;Vegetarisch;1,0;Stk;1,09;REWE;;Milo
+354;03.05.2025;Bio Schlagsahne;Bio Schlagsahne, 2 x 1,19€;Milchprodukte;Vegetarisch;2,0;Stk;2,38;REWE;;Milo
+355;03.05.2025;Bio Lachs;Bio Lachs, 2 x 7,99€;Fisch;Fisch;2,0;Stk;15,98;REWE;;Milo
+356;03.05.2025;Alpenjodsalz;Alpenjodsalz;Würzmittel;Vegan;1,0;Stk;0,85;REWE;;Milo
+357;03.05.2025;Kreuzkümmel;Gemahlener Kreuzkümmel;Würzmittel;Vegan;1,0;Stk;2,79;REWE;;Milo
+358;03.05.2025;Butter mild;Milde Butter;Milchprodukte;Vegetarisch;1,0;Stk;3,49;REWE;;Milo
+359;03.05.2025;Pfand;Pfandflasche;Pfand;Nicht essbar;1,0;Stk;0,25;REWE;;Milo
+360;03.05.2025;Schältomaten;Schältomaten, 2 x 0,65€;Konserve;Vegan;2,0;Stk;1,30;REWE;;Milo
+361;03.05.2025;Bio Eier;Bio Eier Kl. S-L, 2 x 2,99€;Eier;Vegetarisch;2,0;Pack;5,98;REWE;;Milo
+362;03.05.2025;Trink Genuss;Trink Genuss Getränk;Getränke;Vegan;1,0;Stk;1,69;REWE;;Milo
+363;03.05.2025;Tomatenmark;Tomatenmark konzentriert;Pesto;Vegan;1,0;Stk;1,29;REWE;;Milo
+364;03.05.2025;Champignons braun Bio;Braune Bio-Champignons, 2 x 2,39€;Gemüse;Vegan;2,0;Stk;4,78;REWE;;Milo
+365;04.05.2025;Pide;Hisar Backhaus Pide, 2 Stück à 1,80 €;Backwaren;Vegetarisch;2,0;Stück;3,60;Hisar Backhaus;;Lars
+366;05.05.2025;Äpfel;Äpfel 0,206 kg zu 3,99 €/kg;Obst;vegan;0,206;kg;0,82;Alnatura;;Lars
+367;05.05.2025;Bananen;Bananen 0,942 kg zu 2,49 €/kg;Obst;vegan;0,942;kg;2,35;Alnatura;;Lars
+368;05.05.2025;Classic 3-Saat;Classic 3-Saat Brot;Brot & Backwaren;vegan;1,0;Stück;2,99;Alnatura;;Lars
+369;05.05.2025;Äpfel;Äpfel 0,206 kg zu 3,99 €/kg;Obst;vegan;0,206;kg;0,82;Alnatura;;Lars
+370;05.05.2025;Orangen;Orangen 0,584 kg zu 4,99 €/kg;Obst;vegan;0,584;kg;2,91;Alnatura;;Lars
+371;05.05.2025;Classic 3-Saat;Classic 3-Saat Brot;Brot & Backwaren;vegan;1,0;Stück;2,99;Alnatura;;Lars
+372;05.05.2025;Bananen;Bananen 0,942 kg zu 2,49 €/kg;Obst;vegan;0,942;kg;2,35;Alnatura;;Lars
+373;05.05.2025;Orangen;Orangen 0,584 kg zu 4,99 €/kg;Obst;vegan;0,584;kg;2,91;Alnatura;;Lars
+374;06.05.2025;P. Geschnetzeltes;Putengeschnetzeltes aus dem Kühlregal;Fleisch;Fleisch;1,0;Stk;11,38;REWE;;Levi
+375;06.05.2025;Cremefine 15%;Cremefine 15% Fett, 2 x 0,95 €;Milchalternativen;Vegetarisch;2,0;Stk;1,90;REWE;;Levi
+376;06.05.2025;Zwiebeln;Netz Zwiebeln;Gemüse;Vegan;1,0;Netz;1,99;REWE;;Levi
+377;09.05.2025;Caipirinha 10%;Fertigmix-Getränk Caipirinha 10%, 0,33l;Getränke;vegan;1,00;Flasche;2,79;REWE;;Levi
+378;09.05.2025;KBio Bioland Mozz.;Bioland Mozzarella;Milchprodukte;vegetarisch;1,00;Stück;1,29;Kaufland;;Janine
+379;09.05.2025;Backblech Univ.;Backblech Universal;Haushalt;Haushalt;1,00;Stück;19,99;Kaufland;;Janine
+380;09.05.2025;Erdbeere;Frische Erdbeeren 0,528 kg (9,98 €/kg);Obst;vegan;0,528;kg;5,27;REWE;;Levi
+381;09.05.2025;Pfirs. Hibiskus;Pfirsich-Hibiskus Teegetränk 0,5l;Getränke;vegan;1,00;Stk;1,15;REWE;;Levi
+382;09.05.2025;Sprite;Sprite Erfrischungsgetränk 1,25l;Getränke;vegan;1,00;Stk;1,29;REWE;;Levi
+383;09.05.2025;Airwaves Cool;Airwaves Cool Kaugummi, 10 Dragees;Snacks;vegan;1,00;Stk;0,99;REWE;;Levi
+384;09.05.2025;Morio Muskat;Weißwein Morio-Muskat, lieblich, 0,75l;Getränke;vegan;1,00;Flasche;2,49;REWE;;Levi
+385;09.05.2025;Ritmo Verdejo;Weißwein Ritmo Verdejo, trocken, 0,75l;Getränke;vegan;1,00;Flasche;5,99;REWE;;Levi
+386;12.05.2025;Wildblumenkäse;Wildblumenkäse, 0,143 kg zu 30,90 €/kg;Käse;vegetarisch;0,143;kg;4,42;Alnatura;;Lars
+387;12.05.2025;Joghurt Natur;Joghurt Natur, 500g;Milchprodukte;vegetarisch;1,00;Stk;2,89;Alnatura;;Lars
+388;12.05.2025;Französischer Brie;Brie französisch, 0,075 kg zu 14,90 €/kg;Käse;vegetarisch;0,075;kg;1,12;Alnatura;;Lars
+389;12.05.2025;Gummibären Mix;Bunte Gummibärenmischung, vegan;Süßigkeiten/Desserts;vegan;1,00;Stk;1,79;Alnatura;;Lars
+390;12.05.2025;Frische Weidemilch 3,7%;Weidemilch, Frischmilch 3,7%, 1 Liter;Milchprodukte;vegetarisch;1,00;Stk;1,59;Alnatura;;Lars
+391;12.05.2025;Schoko Maiswaffeln VM;Maiswaffeln mit Schokolade, vegan;Süßigkeiten/Desserts;vegan;1,00;Stk;1,59;Alnatura;;Lars
+392;12.05.2025;Feta;Feta, 2 x 2,99 €;Milchprodukte;vegetarisch;2,00;Stk;5,98;Alnatura;;Lars
+393;12.05.2025;Veggie Weingummi;Veganes Fruchtgummi ohne Gelatine;Süßigkeiten/Desserts;vegan;1,00;Stk;1,89;Alnatura;;Lars
+394;14.05.2025;Pide;Türkisches Fladenbrot, 2 Stück à 1,80 €;Backwaren;vegan;2,00;Stk;3,60;Hisar Backhaus;;Milo
+395;14.05.2025;Baklava;Fıstıklı Baklava, 0,062 kg à 30 €/kg;Süßigkeiten/Desserts;vegetarisch;0,062;kg;1,86;Hisar Backhaus;;Milo
+396;15.05.2025;Cott.Toilette;Toilettenpapier Cott., 2 x 1,69 €;Haushalt;;2,00;Stk;3,38;Budni;;Lars
+397;15.05.2025;Goldeim.Toil.pap.;Toilettenpapier Goldeimer, 3,99 €;Haushalt;;1,00;Stk;3,99;Budni;;Lars

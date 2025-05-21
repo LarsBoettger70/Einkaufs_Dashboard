@@ -1,5 +1,5 @@
 // Spaltenbezeichnungen und Reihenfolge der csv-Datei
-// Datum,Artikel,Artikelbeschreibung,Kategorie,Produktart,Menge,Einheit,Preis (€),Supermarkt,Kommentar,Wer
+// Nr;Datum;Artikel;Artikelbeschreibung;Kategorie;Produktart;Menge;Einheit;Preis (€);Supermarkt;Kommentar;Wer
 
 import 'dart:convert';
 import 'dart:io';
@@ -7,8 +7,11 @@ import 'package:csv/csv.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:google_ml_kit/google_ml_kit.dart';
 
 class Einkauf {
+  final String nr;
   final String datum;
   final String artikel;
   final String beschreibung;
@@ -22,6 +25,7 @@ class Einkauf {
   final String wer;
 
   Einkauf({
+    required this.nr,
     required this.datum,
     required this.artikel,
     required this.beschreibung,
@@ -44,6 +48,7 @@ class DashboardFromCSV extends StatefulWidget {
 class _DashboardFromCSVState extends State<DashboardFromCSV> {
   List<Einkauf> _einkaeufe = [];
   String status = 'Keine Datei geladen';
+  bool zeigePreise = true;
 
   Future<void> _pickFileAndParse() async {
     FilePickerResult? result = await FilePicker.platform.pickFiles();
@@ -56,32 +61,164 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
 
       setState(() {
         _einkaeufe = csvRows
-            .where((row) => row.length >= 11)
+            .where((row) => row.length >= 12)
             .map((row) => Einkauf(
-                  datum: row[0]?.toString() ?? '',
-                  artikel: row[1]?.toString() ?? '',
-                  beschreibung: row[2]?.toString() ?? '',
-                  kategorie: row[3]?.toString() ?? '',
-                  produktart: row[4]?.toString() ?? '',
-                  menge: double.tryParse(row[5]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
-                  einheit: row[6]?.toString() ?? '',
-                  preis: double.tryParse(row[7]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
-                  supermarkt: row[8]?.toString() ?? '',
-                  kommentar: row[9]?.toString() ?? '',
-                  wer: row[10]?.toString() ?? '',
+                  nr: row[0]?.toString() ?? '',
+                  datum: row[1]?.toString() ?? '',
+                  artikel: row[2]?.toString() ?? '',
+                  beschreibung: row[3]?.toString() ?? '',
+                  kategorie: row[4]?.toString() ?? '',
+                  produktart: row[5]?.toString() ?? '',
+                  menge: double.tryParse(row[6]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
+                  einheit: row[7]?.toString() ?? '',
+                  preis: double.tryParse(row[8]?.toString().replaceAll(',', '.') ?? '') ?? 0.0,
+                  supermarkt: row[9]?.toString() ?? '',
+                  kommentar: row[10]?.toString() ?? '',
+                  wer: row[11]?.toString() ?? '',
                 ))
             .toList();
-        status = "Datei geladen:${result.files.single.name}";
+        status = "Datei geladen: ${result.files.single.name}";
       });
     }
+  }
+
+  Future<void> _pickReceiptImage() async {
+    final ImagePicker _picker = ImagePicker();
+    final XFile? image = await _picker.pickImage(source: ImageSource.camera);
+    
+    if (image != null) {
+      _processReceiptImage(image.path);
+    }
+  }
+  
+  Future<void> _pickReceiptFromGallery() async {
+    final ImagePicker _picker = ImagePicker();
+    final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+    
+    if (image != null) {
+      _processReceiptImage(image.path);
+    }
+  }
+  
+  Future<void> _processReceiptImage(String imagePath) async {
+    setState(() {
+      status = "Bild wird verarbeitet...";
+    });
+    
+    try {
+      // Check if the file exists
+      final File imageFile = File(imagePath);
+      if (!await imageFile.exists()) {
+        setState(() {
+          status = "Fehler: Bilddatei nicht gefunden";
+        });
+        return;
+      }
+      
+      // Special handling for HEIC images
+      if (imagePath.toLowerCase().endsWith('.heic')) {
+        setState(() {
+          status = "HEIC-Format wird nicht unterstützt. Bitte wählen Sie ein JPEG oder PNG-Bild aus.";
+        });
+        return;
+      }
+      
+      // Process the receipt image with OCR
+      try {
+        final inputImage = InputImage.fromFilePath(imagePath);
+        final textRecognizer = TextRecognizer();
+        
+        try {
+          final RecognizedText recognizedText = await textRecognizer.processImage(inputImage);
+          print("Erkannter Text: ${recognizedText.text}");
+          
+          // Extract data from OCR result
+          List<Einkauf> extractedEinkaeufe = await _parseReceiptText(recognizedText.text);
+          
+          setState(() {
+            if (extractedEinkaeufe.isNotEmpty) {
+              _einkaeufe = extractedEinkaeufe;
+              status = "Kassenbon erfolgreich verarbeitet";
+            } else {
+              status = "Keine Einträge im Kassenbon erkannt";
+            }
+          });
+        } finally {
+          textRecognizer.close();
+        }
+      } catch (e) {
+        setState(() {
+          status = "OCR-Fehler: $e";
+        });
+      }
+    } catch (e) {
+      setState(() {
+        status = "Dateifehler: $e";
+      });
+    }
+  }
+
+  Future<List<Einkauf>> _parseReceiptText(String text) async {
+    // This is a simplified example of receipt parsing
+    // In a real application, you would need more sophisticated pattern matching
+    List<Einkauf> results = [];
+    
+    // Split text into lines
+    List<String> lines = text.split('\n');
+    
+    int counter = 1;
+    String currentDate = DateTime.now().toString().split(' ')[0];
+    String currentSupermarkt = '';
+    
+    // Identify supermarket name if possible
+    for (String line in lines) {
+      if (line.contains('REWE')) currentSupermarkt = 'REWE';
+      else if (line.contains('ALDI')) currentSupermarkt = 'ALDI';
+      else if (line.contains('LIDL')) currentSupermarkt = 'LIDL';
+      // More supermarkets can be added here
+    }
+    
+    // Look for price patterns in each line
+    for (String line in lines) {
+      // Match patterns like "Item Name     10,99 €" or "Item Name 1x10,99 €"
+      RegExp pricePattern = RegExp(r'(.+?)(?:\s+|x)(\d+[,.]\d+)\s*€');
+      Match? match = pricePattern.firstMatch(line);
+      
+      if (match != null && match.groupCount >= 2) {
+        String artikel = match.group(1)?.trim() ?? '';
+        String preisStr = match.group(2)?.replaceAll(',', '.') ?? '0.0';
+        double preis = double.tryParse(preisStr) ?? 0.0;
+        
+        if (artikel.isNotEmpty && preis > 0) {
+          results.add(Einkauf(
+            nr: counter.toString(),
+            datum: currentDate,
+            artikel: artikel,
+            beschreibung: artikel,
+            kategorie: 'Unbestimmt',
+            produktart: 'Unbestimmt',
+            menge: 1.0,
+            einheit: 'Stk',
+            preis: preis,
+            supermarkt: currentSupermarkt,
+            kommentar: 'Automatisch erfasst',
+            wer: '',
+          ));
+          counter++;
+        }
+      }
+    }
+    
+    return results;
   }
 
   Map<String, double> _berechneAusgabenNachProduktart() {
     final Map<String, double> ausgaben = {};
     for (var e in _einkaeufe) {
       if (e.produktart.toLowerCase() == 'nicht essbar') continue;
-      final art = e.produktart.isEmpty ? 'Unbekannt' : e.produktart;
-      ausgaben[art] = (ausgaben[art] ?? 0) + e.preis;
+      final art = e.produktart.isEmpty ? 'Unbestimmt' : e.produktart;
+      final wert = zeigePreise ? e.preis : 1.0;
+      ausgaben[art] = (ausgaben[art] ?? 0) + wert;
     }
     return ausgaben;
   }
@@ -98,7 +235,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
       return PieChartSectionData(
         color: Colors.primaries[i % Colors.primaries.length],
         value: values[i],
-        title: "${labels[i]}\n${values[i].toStringAsFixed(2)} €",
+        title: "${labels[i]}\n${values[i].toInt()} ${zeigePreise ? '€' : ''}",
         radius: 90,
         titleStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
       );
@@ -108,7 +245,8 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
   Map<String, double> _berechneTopKategorien() {
     final Map<String, double> ausgaben = {};
     for (var e in _einkaeufe) {
-      ausgaben[e.kategorie] = (ausgaben[e.kategorie] ?? 0) + e.preis;
+      final wert = zeigePreise ? e.preis : 1.0;
+      ausgaben[e.kategorie] = (ausgaben[e.kategorie] ?? 0) + wert;
     }
     return Map.fromEntries(
       ausgaben.entries.toList()
@@ -128,7 +266,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
           BarChartRodData(
             toY: values[i],
             color: Colors.blueAccent,
-            width: 10,
+            width: 15,
             borderRadius: BorderRadius.zero,
           )
         ],
@@ -142,16 +280,49 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     final topKategorien = _berechneTopKategorien();
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Einkaufs-Dashboard")),
+      appBar: AppBar(
+        title: const Text("Einkaufs-Dashboard"),
+        actions: [
+          Row(
+            children: [
+              const Text("€"),
+              Switch(
+                value: zeigePreise,
+                onChanged: (val) {
+                  setState(() {
+                    zeigePreise = val;
+                  });
+                },
+              ),
+              const Text("Anzahl"),
+              const SizedBox(width: 12),
+            ],
+          )
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ElevatedButton(
-                onPressed: _pickFileAndParse,
-                child: const Text("CSV-Datei laden"),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: _pickFileAndParse,
+                    child: const Text("CSV laden"),
+                  ),
+                  const SizedBox(width: 12),
+                  ElevatedButton(
+                    onPressed: _pickReceiptImage,
+                    child: const Text("Bon Scan"),
+                  ),
+                  const SizedBox(width: 12),
+                  ElevatedButton(
+                    onPressed: _pickReceiptFromGallery,
+                    child: const Text("Bon Foto"),
+                  ),
+                ],
               ),
               const SizedBox(height: 12),
               Text(status),
@@ -170,7 +341,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                   ),
                 ),
                 const SizedBox(height: 24),
-                const Text("Top 7 Kategorien nach Ausgaben"),
+                Text("Top 7 Kategorien nach ${zeigePreise ? 'Ausgaben' : 'Anzahl'}"),
                 const SizedBox(height: 12),
                 SizedBox(
                   height: 300,
@@ -178,7 +349,15 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                     BarChartData(
                       barGroups: _buildBarChartData(),
                       titlesData: FlTitlesData(
-                        leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                        leftTitles: AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: true,
+                            reservedSize: 90,
+                            getTitlesWidget: (value, meta) {
+                              return const SizedBox();
+                            },
+                          ),
+                        ),
                         topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                         bottomTitles: AxisTitles(
                           sideTitles: SideTitles(
@@ -186,17 +365,25 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                             reservedSize: 80,
                             getTitlesWidget: (value, meta) {
                               final index = value.toInt();
-                              return Transform.translate(
-                                offset: const Offset(0, -30),
-                                child: Transform.rotate(
-                                  angle: -1.2,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    index < topKategorien.length ? topKategorien.keys.toList()[index] : '',
-                                    style: const TextStyle(fontSize: 14),
+                              if (index < topKategorien.length) {
+                                final categoryName = topKategorien.keys.toList()[index];
+                                final displayText = categoryName.length > 10 
+                                    ? categoryName.substring(0, 10) + '...' 
+                                    : categoryName;
+                                
+                                return RotatedBox(
+                                  quarterTurns: 3, // 270 degrees (vertical text)
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: 10),
+                                    child: Text(
+                                      displayText,
+                                      style: const TextStyle(fontSize: 11),
+                                      maxLines: 1,
+                                    ),
                                   ),
-                                ),
-                              );
+                                );
+                              }
+                              return const SizedBox();
                             },
                           ),
                         ),
@@ -210,17 +397,18 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                         ),
                       ),
                       barTouchData: BarTouchData(
-                        enabled: false,
+                        enabled: true,
                         touchTooltipData: BarTouchTooltipData(
-                          tooltipPadding: EdgeInsets.zero,
-                          tooltipMargin: 0,
+                          tooltipPadding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                          tooltipMargin: 4,
                           getTooltipItem: (group, groupIndex, rod, rodIndex) {
+                            final value = rod.toY.toInt();
                             return BarTooltipItem(
-                              '${rod.toY.toInt()} €',
+                              '${value} ${zeigePreise ? '€' : ''}',
                               const TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 12,
+                                fontSize: 10,
                               ),
                             );
                           },

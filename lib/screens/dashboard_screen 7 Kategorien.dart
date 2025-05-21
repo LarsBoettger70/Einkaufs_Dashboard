@@ -71,7 +71,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
                   wer: row[10]?.toString() ?? '',
                 ))
             .toList();
-        status = "Datei geladen: ${result.files.single.name}";
+        status = "Datei geladen:${result.files.single.name}";
       });
     }
   }
@@ -79,6 +79,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
   Map<String, double> _berechneAusgabenNachProduktart() {
     final Map<String, double> ausgaben = {};
     for (var e in _einkaeufe) {
+      if (e.produktart.toLowerCase() == 'nicht essbar') continue;
       final art = e.produktart.isEmpty ? 'Unbekannt' : e.produktart;
       ausgaben[art] = (ausgaben[art] ?? 0) + e.preis;
     }
@@ -98,7 +99,7 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
         color: Colors.primaries[i % Colors.primaries.length],
         value: values[i],
         title: "${labels[i]}\n${values[i].toStringAsFixed(2)} €",
-        radius: 100,
+        radius: 90,
         titleStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
       );
     });
@@ -112,23 +113,29 @@ class _DashboardFromCSVState extends State<DashboardFromCSV> {
     return Map.fromEntries(
       ausgaben.entries.toList()
         ..sort((a, b) => b.value.compareTo(a.value))
-        ..length = ausgaben.length < 5 ? ausgaben.length : 5,
+        ..length = ausgaben.length < 7 ? ausgaben.length : 7,
     );
   }
-List<BarChartGroupData> _buildBarChartData() {
-  final data = _berechneTopKategorien();
-  final values = data.values.toList();
 
-  return List.generate(data.length, (i) {
-    return BarChartGroupData(x: i, barRods: [
-      BarChartRodData(
-        toY: values[i],
-        color: Colors.blueAccent,
-        width: 20, // Breite der Balken hinzufügen
-      )
-    ]);
-  });
-}
+  List<BarChartGroupData> _buildBarChartData() {
+    final data = _berechneTopKategorien();
+    final values = data.values.toList();
+
+    return List.generate(data.length, (i) {
+      return BarChartGroupData(
+        x: i,
+        barRods: [
+          BarChartRodData(
+            toY: values[i],
+            color: Colors.blueAccent,
+            width: 15,
+            borderRadius: BorderRadius.zero,
+          )
+        ],
+        showingTooltipIndicators: [0],
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -163,7 +170,7 @@ List<BarChartGroupData> _buildBarChartData() {
                   ),
                 ),
                 const SizedBox(height: 24),
-                const Text("Top 5 Kategorien nach Ausgaben"),
+                const Text("Top 7 Kategorien nach Ausgaben"),
                 const SizedBox(height: 12),
                 SizedBox(
                   height: 300,
@@ -171,31 +178,61 @@ List<BarChartGroupData> _buildBarChartData() {
                     BarChartData(
                       barGroups: _buildBarChartData(),
                       titlesData: FlTitlesData(
-                        leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: true)),
+                        leftTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                        topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                         bottomTitles: AxisTitles(
                           sideTitles: SideTitles(
                             showTitles: true,
                             reservedSize: 80,
                             getTitlesWidget: (value, meta) {
                               final index = value.toInt();
-                              return Transform.rotate(
-                                angle: -1.2, // ca 69 Grad
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 40), // weiter hochschieben
+                              return Transform.translate(
+                                offset: const Offset(15, -60),
+                                child: Transform.rotate(
+                                  angle: -1.55,
+                                  alignment: Alignment.center,
                                   child: Text(
                                     index < topKategorien.length ? topKategorien.keys.toList()[index] : '',
                                     style: const TextStyle(fontSize: 14),
-                                    textAlign: TextAlign.right,
                                   ),
                                 ),
                               );
                             },
                           ),
                         ),
+                        rightTitles: AxisTitles(
+                          sideTitles: SideTitles(
+                            showTitles: true,
+                            getTitlesWidget: (value, meta) {
+                              return Text(value.toInt().toString(), style: const TextStyle(fontSize: 10));
+                            },
+                          ),
+                        ),
                       ),
+                      barTouchData: BarTouchData(
+                        enabled: false,
+                        touchTooltipData: BarTouchTooltipData(
+                          tooltipPadding: EdgeInsets.zero,
+                          tooltipMargin: 0,
+                          getTooltipItem: (group, groupIndex, rod, rodIndex) {
+                            return BarTooltipItem(
+                              '${rod.toY.toInt()} €',
+                              const TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                      gridData: FlGridData(show: true),
+                      alignment: BarChartAlignment.center,
+                      maxY: _berechneTopKategorien().values.fold(0.0, (prev, elem) => elem > prev ? elem : prev) * 1.2,
+                      borderData: FlBorderData(show: false),
                     ),
                   ),
-                )
+                ),
               ]
             ],
           ),
