@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  fl_chart: ^0.71.0
+  fl_chart: ^1.0.0
 
   file_picker: ^10.1.0
   csv: ^5.0.0
@@ -40,6 +40,14 @@ dependencies:
   cupertino_icons: ^1.0.8
   image_picker: ^1.1.2
   google_ml_kit: ^0.20.0
+  drift: ^2.26.1
+  sqlite3_flutter_libs: ^0.5.33
+  path_provider: ^2.1.5
+  drift_dev: any
+  build_runner: any
+  flutter_image_compress: ^2.1.0
+  path: ^1.8.0
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
